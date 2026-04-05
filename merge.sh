@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script reads the filenames (IP addresses) and contents (serial numbers) of CSV files in the current directory and automatically generates an Ansible inventory file (hosts.ini).
+
 TIMESTAMP=$(date "+%Y%m%d_%H%M%S")
 OUTPUT="hosts_${TIMESTAMP}.ini"
 
