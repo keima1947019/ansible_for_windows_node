@@ -12,6 +12,7 @@ if (!is_user_logged_in() || !current_user_can('manage_options')) {
 $data = json_decode(file_get_contents('php://input'), true);
 $executor = sanitize_text_field($data['executor'] ?? '不明');
 $status = sanitize_text_field($data['status'] ?? 'UNKNOWN');
+date_default_timezone_set('Asia/Tokyo');
 $summary = sanitize_text_field($data['summary'] ?? '');
 $date = date('Y-m-d H:i:s');
 

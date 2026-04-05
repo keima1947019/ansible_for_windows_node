@@ -88,13 +88,23 @@ document.querySelectorAll('.exec-btn').forEach(function(btn) {
                 return;
             }
 
-            if (afterRecap) {
-                const match = e.data.match(/failed=(\d+)/);
-                if (match && parseInt(match[1]) > 0) {
-                    hasError = true;
-                }
-                afterRecap = false;
+if (afterRecap) {
+    // 空行はスキップ
+    if (e.data.trim() === '') {
+        // afterRecapをfalseにしない（次の行を待つ）
+    } else {
+        console.log('RECAP行の次:', e.data);
+        const checks = ['failed', 'unreachable'];
+        checks.forEach(key => {
+            const match = e.data.match(new RegExp(`${key}=(\\d+)`));
+            if (match && parseInt(match[1]) > 0) {
+                hasError = true;
             }
+        });
+        afterRecap = false;
+    }
+}
+
 
             if (e.data.includes('PLAY RECAP')) {
                 afterRecap = true;
