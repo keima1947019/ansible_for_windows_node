@@ -1,0 +1,12 @@
+[2026-04-05 03:34:26] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:34:35] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:35:03] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:43:00] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:43:10] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:45:50] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:48:23] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 03:56:57] USER:admin STATUS:FAILED SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 04:00:39] USER:admin STATUS:SUCCESS SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 04:19:37] EXECUTOR:田中 STATUS:SUCCESS SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 04:19:42] EXECUTOR:佐藤 STATUS:SUCCESS SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
+[2026-04-05 04:19:46] EXECUTOR:鈴木 STATUS:SUCCESS SUMMARY:172.20.90.8 : ok=1 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0

@@ -1,0 +1,9 @@
+- name: Display a notification on the desktop
+  hosts: windows
+  gather_facts: no
+  tasks:
+    - name: Display a notification on the desktop
+      community.windows.win_msg:
+        msg: "System maintenance will begin in 15 minutes. Please save your work."
+        title: " Notice from the Administrator"
+        display_seconds: 10
