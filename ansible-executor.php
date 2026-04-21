@@ -5,7 +5,7 @@ header('Cache-Control: no-cache');
 header('X-Accel-Buffering: no'); // バッファリングを無効化
 
 // Ansibleコマンドの定義（PYTHONUNBUFFEREDで出力を即時化）
-$command = "export PYTHONUNBUFFERED=1; export HOME=/tmp; ansible-playbook -i ./hosts.ini.test ./notification_01.yml 2>&1";
+$command = "export PYTHONUNBUFFERED=1; export HOME=/tmp; ansible-playbook -i ./hosts.ini ./notification_01.yml 2>&1";
 
 $descriptorspec = [
     1 => ["pipe", "w"], // 標準出力
