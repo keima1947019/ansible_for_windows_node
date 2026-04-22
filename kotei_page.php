@@ -57,7 +57,8 @@ document.querySelectorAll('.exec-btn').forEach(function(btn) {
         badge.style.display = 'block';
         logWindow.textContent = `--- ${targetLabel}さんが実行中... ---\n`;
 
-        const es = new EventSource('/ansible-executor.php');
+        const scriptType = this.dataset.type === 'merge' ? '/merge-executor.php' : '/ansible-executor.php';
+        const es = new EventSource(scriptType);
 
         es.onmessage = function(e) {
             console.log('受信データ:', e.data);
